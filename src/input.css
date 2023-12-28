@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html{
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-barlow;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-fraunces font-fraunces-900;
+  }
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl uppercase tracking-[.2em] md:tracking-[.25em];
+  }
+  h2 {
+    @apply text-4xl md:text-5xl tracking-wider;
+  }
+  h3{
+    @apply text-3xl tracking-wider;
+  }
+  h4{
+    @apply text-2xl uppercase tracking-[.2em] md:tracking-[.25em];
+  }
+  h6{
+    @apply text-lg mb-3;
+  }
+  p{
+    @apply text-lg tracking-wider font-barlow-500 font-barlow;
+  }
+  span{
+    @apply text-base tracking-tight text-grayishBlueNeutral font-barlow-500;
+  }
+}
